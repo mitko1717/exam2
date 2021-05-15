@@ -1,0 +1,20 @@
+$colorBlue: rgb(85, 183, 255);
+$colorFio: rgb(126, 90, 255);
+$colorWhite: rgb(255, 255, 255);
+$colorDark: rgb(44, 64, 88);
+$ffMon: "Montserrat";
+$ffOS: "OpenSans";
+
+%flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+%flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}

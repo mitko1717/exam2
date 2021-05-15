@@ -1,0 +1,48 @@
+.btn {
+  width: 11.5rem;
+  height: 3rem;
+  font-size: 0.875rem;
+  color: $colorDark;
+  text-transform: uppercase;
+  text-align: center;
+  outline: none;
+  border: 1px solid $colorDark;
+  background-color: $colorWhite;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.slider-btn {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid $colorWhite;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  background: none;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  transform: translateY(-50%);
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.slider-prev {
+  position: absolute;
+  left: 10%;
+  z-index: 22;
+}
+
+.slider-next {
+  position: absolute;
+  right: 10%;
+  z-index: 23;
+}

@@ -1,0 +1,177 @@
+.section-four {
+  position: relative;
+  margin-top: 6rem;
+  height: 950px;
+  width: 100%;
+  background-image: url(../img/bg-middlepart.png),
+    linear-gradient(45deg, rgb(60, 127, 212) 0%, rgb(36, 204, 250) 100%);
+  text-align: center;
+
+  &__line {
+    margin: 6rem 0 1rem 0;
+  }
+
+  &__title {
+    color: $colorWhite;
+  }
+}
+
+.carousel__container {
+  position: relative;
+  margin: 3rem auto 0;
+  max-width: 1170px;
+  display: flex;
+  overflow: hidden;
+}
+
+.section-four__carousel {
+  display: flex;
+
+  &--obj {
+    position: relative;
+    width: 370px;
+    height: 520px;
+    background-color: $colorWhite;
+    margin: 0 10px;
+  }
+}
+
+.obj {
+  position: relative;
+  &__img {
+    width: 370px;
+    height: 240px;
+  }
+
+  &__info {
+    @extend %flex-col;
+    text-align: left;
+    margin: 2rem 0 0 1rem;
+
+    &__title {
+      font-size: 22px;
+      color: $colorDark;
+      text-transform: uppercase;
+      font-weight: 600;
+      line-height: 1.545;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+      font-family: 'Open Sans', sans-serif;
+      color: rgb(75, 85, 98);
+      line-height: 1.667;
+    }
+
+    &__person {
+      @extend %flex-row;
+      margin-top: 2rem;
+      justify-content: flex-start;
+
+      &--author {
+        margin-left: 1rem;
+
+        &__name {
+          font-size: 18px;
+          color: rgb(44, 64, 88);
+          text-transform: uppercase;
+          line-height: 1.222;
+        }
+
+        &__date {
+          font-size: 14px;
+          color: $colorBlue;
+        }
+      }
+    }
+  }
+}
+
+.circles {
+  width: 300px;
+  margin: 55px auto 0;
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    list-style: none;
+    cursor: pointer;
+
+    &--circle {
+      width: 14px;
+      height: 14px;
+    }
+  }
+}
+
+.active {
+  background: white;
+  border-radius: 50%;
+}
+
+.obj1__img {
+  background-image: url(../img/img3.png);
+}
+
+.obj2__img {
+  background-image: url(../img/img4.png);
+}
+
+.obj3__img {
+  background-image: url(../img/img5.png);
+}
+
+.obj4__img {
+  background-image: url(../img/img11.png);
+}
+
+.obj5__img {
+  background-image: url(../img/img10.png);
+}
+
+.obj6__img {
+  background-image: url(../img/img6.png);
+}
+
+.obj7__img {
+  background-image: url(../img/img7.png);
+  background-size: cover;
+}
+
+.obj8__img {
+  background-image: url(../img/img8.png);
+  background-size: cover;
+}
+
+.obj9__img {
+  background-image: url(../img/img9.png);
+  background-size: cover;
+}
+
+.obj11__img {
+  background-image: url(../img/img5.png);
+}
+
+.obj10__img {
+  background-image: url(../img/bg-header.png),
+    linear-gradient(45deg, rgb(85, 183, 255) 0%, rgb(126, 90, 255) 100%);
+}
+
+.obj12__img {
+  background-image: url(../img/Logo.svg),
+    linear-gradient(45deg, rgb(85, 183, 255) 0%, rgb(126, 90, 255) 100%);
+}
+
+.obj14__img {
+  background-image: url(../img/img4.png);
+}
+
+.obj13__img {
+  background-image: url(../img/bg-header.png),
+    linear-gradient(45deg, rgb(85, 183, 255) 0%, rgb(7, 1, 32) 100%);
+}
+
+.obj15__img {
+  background-image: url(../img/Logo.svg),
+    linear-gradient(45deg, rgb(39, 16, 30) 0%, rgb(69, 226, 116) 100%);
+}

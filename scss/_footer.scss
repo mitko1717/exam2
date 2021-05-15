@@ -1,0 +1,136 @@
+.section-six {
+  height: 1200px;
+  text-align: center;
+  position: relative;
+
+  &__footer--map {
+    height: 700px;
+    background-image: url(/img/img11.png);
+    background-size: cover;
+  }
+
+  &__footer {
+    height: 500px;
+    background-image: url(../img/bg-footer.png),
+      linear-gradient(45deg, rgb(85, 183, 255) 0%, rgb(126, 90, 255) 100%);
+  }
+
+  &__button {
+    align-self: flex-end;
+  }
+
+  &__footer--logoAndIcons {
+    @extend %flex-row;
+    width: 770px;
+    margin: 0 auto;
+    padding: 180px 0 30px;
+  }
+}
+
+.footer__form {
+  width: 770px;
+  height: 450px;
+  background-color: $colorWhite;
+  box-shadow: 10px -4px 50px 0px rgba(133, 133, 133, 0.2);
+  margin: 0 auto;
+  transform: translateY(85%);
+
+  &--line {
+    margin: 3rem 0 1rem 0;
+  }
+
+  &--container {
+    margin-top: 3rem;
+    @extend %flex-row;
+  }
+
+  &--info {
+    width: 370px;
+    height: 200px;
+    text-align: left;
+    margin-left: 4rem;
+    @extend %flex-col;
+    justify-content: space-between;
+  }
+
+  &--fa {
+    color: $colorFio;
+    padding-right: 1rem;
+  }
+
+  &__forma {
+    width: 370px;
+  }
+
+  &--data {
+    @extend %flex-col;
+    justify-content: space-between;
+    width: 310px;
+    height: 200px;
+    margin-right: 3rem;
+  }
+}
+
+.data {
+  &__input {
+    padding-bottom: 1rem;
+    font-size: 18px;
+    color: rgb(44, 64, 88);
+    line-height: 1.222;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgba(44, 64, 88, 0.5);
+    opacity: 0.5;
+  }
+  &__input:focus {
+    border-bottom: 1px solid rgba(44, 64, 88, 1);
+    opacity: 1;
+  }
+  &__input:valid {
+    border-bottom: 1px solid rgba(44, 64, 88, 1);
+    opacity: 1;
+  }
+}
+
+.footer--social {
+  @extend %flex-row;
+
+  &__logo {
+    cursor: pointer;
+  }
+
+  &__icon {
+    @extend %flex-row;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+
+  &__icon:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.footer__text {
+  display: flex;
+  color: $colorWhite;
+  width: 770px;
+  margin: 0 auto;
+  font-weight: 300;
+
+  &--container {
+    @extend %flex-row;
+    width: 450px;
+
+    &__par {
+      font-size: 14px;
+      line-height: 1.571;
+    }
+  }
+}

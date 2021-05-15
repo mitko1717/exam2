@@ -1,0 +1,152 @@
+.section-one {
+  @extend %flex-col;
+  justify-content: space-between;
+  position: relative;
+  width: 100vw;
+  height: 50rem;
+  background-image: url(../img/bg-header.png),
+    linear-gradient(45deg, rgb(85, 183, 255) 0%, rgb(126, 90, 255) 100%);
+  background-position: center;
+  text-transform: uppercase;
+  color: $colorWhite;
+
+  &__btn {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid $colorWhite;
+    border-radius: 50%;
+    margin: 0 auto 3.2rem;
+    opacity: 0.5;
+    @extend %flex-row;
+    justify-content: center;
+    cursor: pointer;
+
+    &--down {
+      width: 0.7rem;
+      height: 0.7rem;
+    }
+  }
+
+  &__btn:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__text {
+    text-align: center;
+    &--title {
+      font-size: 5rem;
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+    }
+    &--subtitle {
+      font-size: 1.125rem;
+      letter-spacing: 0.3rem;
+      font-weight: 300;
+    }
+  }
+
+  &__right-nav {
+    list-style: none;
+    margin: auto auto;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+  }
+}
+
+.right-nav--circle {
+  display: flex;
+  height: 10px;
+  width: 10px;
+}
+
+.stickyNav {
+  height: 100%;
+  position: fixed;
+  z-index: 222;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-25%);
+}
+
+.activeNav {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.activeHead {
+  background-color: #fff;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+.header {
+  @extend %flex-row;
+  margin: 3rem 3rem 0 0;
+
+  &--logo {
+    cursor: pointer;
+    margin-left: 15rem;
+  }
+
+  &__social {
+    @extend %flex-row;
+    margin-right: 15rem;
+    &--social-icon {
+      @extend %flex-row;
+      justify-content: center;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      border-radius: 50%;
+      padding: 1rem;
+      margin: 0.5rem;
+      cursor: pointer;
+    }
+    &--social-icon:hover {
+      border: 1px solid rgba(255, 255, 255, 1);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__list {
+    @extend %flex-row;
+    width: 30%;
+    height: 9px;
+    font-size: 0.825rem;
+    font-weight: 300;
+    justify-content: space-between;
+
+    &--list-item {
+      list-style: none;
+      cursor: pointer;
+      text-decoration: none;
+      color: #ffffff;
+      display: flex;
+      width: 9px;
+      height: 9px;
+      align-items: center;
+    }
+
+    &--list-item:hover {
+      font-weight: 500;
+    }
+
+    &--list-item:active > .header__list--list-circle,
+    &--list-item:hover > .header__list--list-circle {
+      background-color: white;
+      border-radius: 50%;
+    }
+
+    &--list-circle {
+      width: 9px;
+      height: 9px;
+      margin-right: 5px;
+    }
+  }
+}
